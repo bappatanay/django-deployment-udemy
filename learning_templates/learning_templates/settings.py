@@ -75,17 +75,7 @@ WSGI_APPLICATION = 'learning_templates.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'djangoudemy',
-        'USER': 'root',
-        'PASSWORD': '123456',
-        'HOST': 'localhost',
-        'PORT': ''
-    }
-}
-
+db = web.database(dbn = 'mysql', db = 'Ulysses6$default', user = 'Ulysses6', pw = 'NotRealPw', host='mysql.server', port=3306)
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
