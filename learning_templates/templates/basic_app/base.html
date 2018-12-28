@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="{% static "css/my_style.css" %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #094ebc;">
+      <a class="navbar-brand" href="{% url 'index' %}">
+        <img src="{% static "photos/logo.png" %}" width="30" height="30" alt="MyStore">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Login/SignUp</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              More
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Sell Here</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Customer Support</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Trending</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Fashion Blog</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Products or Brands" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <div style="padding-left:15px;">
+        <a class="navbar-brand" href="/appTwo/index/">
+          <img src="{% static "photos/Cart.png" %}" width="30" height="30" alt="MyStore">
+        </a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+  <div class="container">
+    <nav class="navbar navbar-expand-md navbar-light" style="background-color: #d6d8db;">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown" style="padding-right: 80px;">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Men
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <h6 class="dropdown-header">Footwear</h6>
+            <a class="dropdown-item" href="#">Casual Shoes</a>
+            <a class="dropdown-item" href="#">Formal Shoes</a>
+            <a class="dropdown-item" href="#">Sports Shoes</a>
+            <a class="dropdown-item" href="#">Sandle & Floaters</a>
+            <a class="dropdown-item" href="#">Flip-Flop</a>
+            <a class="dropdown-item" href="#">Running Shoes</a>
+            <div class="dropdown-divider"></div>
+            <h6 class="dropdown-header">Clothing</h6>
+            <a class="dropdown-item dropdown-header" href="#">Topwear</a>
+            <a class="dropdown-item" href="#">Shirts</a>
+            <a class="dropdown-item" href="#">T-Shirts</a>
+            <a class="dropdown-item" href="#">Kurtas</a>
+            <a class="dropdown-item" href="#">Suits & Blazers</a>
+            <a class="dropdown-item dropdown-header" href="#">Bottomwear</a>
+            <a class="dropdown-item" href="#">Jeans</a>
+            <a class="dropdown-item" href="#">Trousers</a>
+            <a class="dropdown-item" href="#">Shorts</a>
+            <a class="dropdown-item" href="#">Cargos</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown" style="padding-right: 80px;">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Women
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Sell Here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Customer Support</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Trending</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Fashion Blog</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown" style="padding-right: 80px;">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Kids
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Sell Here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Customer Support</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Trending</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Fashion Blog</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown" style="padding-right: 80px;">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Jewelry
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Sell Here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Customer Support</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Trending</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Fashion Blog</a>
+          </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    </div>
+
+    {% block body_block %}
+    <p>everything outside</p>
+    {% endblock %}
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  </body>
+</html>
